@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.davidgluckman.cs496finaldg.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/app_welcome"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/view_dogs_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_dogs_text" />
+
+                <Button
+                    android:id="@+id/add_dog_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_dog_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/modify_dog_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify_dog_text" />
+
+                <Button
+                    android:id="@+id/delete_dog_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_dog_text" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/adopt_dog_button"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:text="@string/adopt_dog_text"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/view_foster_homes_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_foster_homes_text" />
+
+                <Button
+                    android:id="@+id/add_foster_home_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_foster_home_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/modify_foster_home_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify_foster_home_text" />
+
+                <Button
+                    android:id="@+id/delete_foster_home_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_foster_home_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/foster_dog_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/foster_dog_text" />
+
+                <Button
+                    android:id="@+id/unfoster_dog_button"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unfoster_dog_text" />
+
+            </LinearLayout>
+
+            <ListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/dog_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

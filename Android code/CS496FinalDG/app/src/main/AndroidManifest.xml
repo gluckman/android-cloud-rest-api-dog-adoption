@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.davidgluckman.cs496finaldg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewDogsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ViewFosterHomesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddDogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddFosterHomeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeleteDogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ModifyDogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdoptDogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeleteFosterHomeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ModifyFosterHomeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".PlaceFosterDogActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RemoveFosterDogActivity"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
